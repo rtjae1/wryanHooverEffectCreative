@@ -77,7 +77,7 @@ body.night {
   left: 0;
   width: 0;
   height: 100%;
-  background-image: url('/assets/img/image.png');
+  background: url('./assets/img/image.png');
   background-size: cover;
   transform-origin: left;
   transition: 0.5s;
