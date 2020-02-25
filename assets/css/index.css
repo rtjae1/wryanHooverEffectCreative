@@ -52,3 +52,45 @@ body.night {
   left: 25px;
   background: var(--primaryColor);
 }
+/* for the hover button */
+.content a {
+  position: relative;
+  width: 300px;
+  height: 75px;
+  margin: 10px 0;
+  font-size: 24px;
+  color: var(--secondaryColor);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.content a:hover {
+  color: var(--primaryColor);
+}
+.content a:before {
+  content: '';
+  position: absolute;
+  color: var(--primaryColor);
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: url('/assets/img/image.png');
+  background-size: cover;
+  transform-origin: left;
+  transition: 0.5s;
+}
+.content a:before {
+  background: url('/assets/img/image.png');
+  background-size: cover;
+}
+.content a:hover:before {
+  width: 100%;
+
+}
+.content a span {
+  position: relative;
+  z-index: 1;
+}
