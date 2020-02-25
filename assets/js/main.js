@@ -6,3 +6,11 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+
+$(document).ready(function () {
+    $('.toggle').click(function () {
+        $('.toggle').toggleClass('active')
+        $('.overlay').toggleClass('active')
+        $('body').toggleClass('night')
+    })
+})
