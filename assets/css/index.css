@@ -77,14 +77,10 @@ body.night {
   left: 0;
   width: 0;
   height: 100%;
-  background: url('/assets/img/image.png');
+  background-image: url('/assets/img/image.png');
   background-size: cover;
   transform-origin: left;
   transition: 0.5s;
-}
-.content a:before {
-  background: url('/assets/img/image.png');
-  background-size: cover;
 }
 .content a:hover:before {
   width: 100%;
